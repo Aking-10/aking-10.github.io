@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ariel Patricio Guaña Haro - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #003268, #0074CF);
+      color: #fff;
+      line-height: 1.6;
     }
     header {
-      background: #003268;
-      color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.3);
     }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: 0.5rem 0 0; font-size: 1.2rem; }
+    header h1 { font-size: 2.8rem; font-weight: 700; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; }
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease-in-out;
     }
     h2 {
-      color: #003268;
-      border-bottom: 2px solid #0074CF;
-      display: inline-block;
+      font-size: 2rem;
       margin-bottom: 1rem;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 0.2rem;
     }
     .project {
-      background: white;
-      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
       padding: 1rem;
+      border-radius: 10px;
       margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background 0.3s ease;
     }
+    .project:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .project h3 { margin-bottom: 0.5rem; }
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover { text-decoration: underline; }
     footer {
-      background: #003268;
-      color: white;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -56,9 +76,9 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I am a Software Engineering student at EPN with experience in React, Next.js, Python, and 
-      PostgreSQL. I’ve worked on professional projects like Navixfy and Capitalink, developing 
-      scalable solutions in both frontend and backend. I am also pursuing a music career as Ariel AG.
+      I am a Software Engineering student at EPN with strong experience in React, Next.js, 
+      Tailwind, Python, and PostgreSQL. I’ve contributed to professional projects like 
+      <strong>Navixfy</strong> and <strong>Capitalink</strong>, building scalable and modern solutions.
     </p>
   </section>
 
@@ -67,28 +87,27 @@
 
     <div class="project">
       <h3>Navixfy MVP</h3>
-      <p>Frontend and backend development for a logistics and supply chain platform. Built with 
-      React, Next.js, Node.js, and PostgreSQL.</p>
+      <p>Logistics and supply chain platform. Worked on frontend (Next.js + Tailwind) and backend 
+      (Node.js + PostgreSQL).</p>
     </div>
 
     <div class="project">
       <h3>Capitalink</h3>
-      <p>Worked on dashboards, inventory predictions (AI integration with Python), and scalable 
-      backend solutions using Express.js and PostgreSQL.</p>
+      <p>Dashboards and AI-driven inventory prediction (Python, Holt-Winters, Prophet, PostgreSQL).</p>
     </div>
 
     <div class="project">
       <h3>Freelance Projects</h3>
-      <p>Landing pages, CRMs, newsletters, and inventory dashboards for different clients, always 
-      focusing on professional design and scalability.</p>
+      <p>Landing pages, CRMs, and automation systems for small businesses, always focusing on 
+      professional UI/UX.</p>
     </div>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:arielpatricioguana@gmail.com">arielpatricioguana@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Aking-10" target="_blank">github.com/Aking-10</a></p>
-    <p>LinkedIn: (aquí ponemos tu LinkedIn cuando lo tengamos)</p>
+    <p>📧 Email: <a href="mailto:arielpatricioguana@gmail.com">arielpatricioguana@gmail.com</a></p>
+    <p>💻 GitHub: <a href="https://github.com/Aking-10" target="_blank">github.com/Aking-10</a></p>
+    <p>🔗 LinkedIn: (to add)</p>
   </section>
 
   <footer>
